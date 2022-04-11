@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: red;
+    position: sticky;
+    overflow: auto;
+    z-index: 101;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+main {
+    max-width: 100%;
+    padding: 20px;
+    overflow: auto;
+}
+
+mini-standing {
+    display: block;
+    float: left;
+    width: 25%;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+mini-standing > .standing {
+    display: block;
+    border-color: red;
+    border-style: solid;
+    border-width: 0 10px 10px 0;
+    border-radius: 0 0 20px 0;
+    padding-bottom: 15px;
+}
+
+mini-standing > .standing > h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+mini-standing > .standing > .driver-ranking {
+    overflow: auto;
+    max-height: 420px;
+    scrollbar-width: thin;
+    scrollbar-color: red white;
+    margin-right: 1px;
+    margin-top: 5px;
+}
+
+mini-standing > .standing > .driver-ranking > .driver-standing {
+    border: white 1px solid;
+    background-color: white;
+    box-shadow: 3px 3px 3px 0 grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+mini-standing > .standing > .driver-ranking > .driver-standing > .grid {
+    margin-left: 20px;
+    display: flex;
+}
+
+mini-standing > .standing > .driver-ranking > .driver-standing > .grid > .position {
+    float: left;
+    width: 10%;
+}
+
+mini-standing > .standing > .driver-ranking > .driver-standing > .grid > .name {
+    float: left;
+    width: 80%;
+}
+
+mini-standing > .standing > .driver-ranking > .driver-standing > .grid > .point {
+    float: right;
+    width: 10%;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.content{
+    width: 50%;
+    float: left;
+
+}
+
+description-item > .description {
+    border-color: red;
+    border-style: solid;
+    border-width: 10px 10px 10px 0px;
+    border-radius: 0 20px 20px 0;;
+}
+
+description-item > .description > legend {
+    line-height: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+description-item > .description > legend > h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+description-item > .description > p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px;
+    margin-bottom: 30px;
+}
+
+description-item > .description > .container {
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+description-item > .description > .container > .mySlides > img {
+    vertical-align: middle;
+    width: 99%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1.5}
+}
+
+.row {
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 10px 0px;
+}
+
+.constructor-preview {
+    margin-top: 15px;
+}
+
+.constructor-preview > .constructor-preview-header > h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.constructor-preview > .constructor-preview-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.constructor-preview > .constructor-preview-body > .constructor-preview-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+
+.constructor-preview > .constructor-preview-body > .constructor-preview-item > .constructor-info {
+    border: white 1px solid;
+    background-color: white;
+    box-shadow: 0 5px 10px -1px grey;
+    border-radius: 10px;
+    display: inline-flex;
+    width: 100%;
+    min-height: 100%;
+}
+
+.constructor-preview > .constructor-preview-body > .constructor-preview-item > .constructor-info > img {
+    max-width: 40%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.constructor-preview > .constructor-preview-body > .constructor-preview-item > .constructor-info > p {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.mini-circuit {
+    padding: 10px;
+    width: 25%;
+    float: right;
+}
+
+.row-secondary {
+    border-color: black;
+    border-style: solid;
+    border-width: 0 0 5px 0px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mini-circuit > .circuit {
+    width: 100%;
+    overflow: auto;
+    max-height: 700px;
+    scrollbar-width: thin;
+    scrollbar-color: red white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div ::-webkit-scrollbar {
+    width: 5px;
+}
+
+div ::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+div ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.mini-circuit > .circuit > .circuit-list {
+    border: white 1px solid;
+    background-color: white;
+    box-shadow: 0 5px 10px -1px grey;
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    display: inline-flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-img {
+    max-width: 40%;
+    max-height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-description {
+    padding: 10px;
+    width: 100%;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-description > .circuit-country {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-description > .circuit-country > img {
+    max-width: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-description > .circuit-country > p {
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.mini-circuit > .circuit > .circuit-list > .circuit-description > .circuit-name {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+    mini-standing,
+    .content,
+    .mini-circuit {
+        width: 100%;
+        padding: 0;
+    }
+
+    head-title {
+        text-align: center;
+    }
+
+    .mobile-visual {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    mini-standing > .standing> .driver-ranking > .driver-standing {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .mini-circuit {
+        margin-top: 15px;
+    }
+
+    .mini-circuit > .circuit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mini-circuit > .circuit > .circuit-list {
+        flex: 0 0 47%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 100px) {
+    .mini-circuit > .circuit > .circuit-list {
+        flex: 0 0 47%;
+        width: 100%;
+    }
+}
